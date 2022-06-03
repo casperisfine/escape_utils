@@ -2,7 +2,8 @@ require File.expand_path("../../helper", __FILE__)
 
 require 'active_support'
 require 'active_support/json'
-require 'action_view/helpers/javascript_helper'
+require 'action_view'
+require 'action_view/helpers'
 
 class JavascriptEscapeTest < Minitest::Test
   ActiveSupport.escape_html_entities_in_json = true
